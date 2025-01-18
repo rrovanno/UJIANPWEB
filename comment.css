@@ -1,0 +1,81 @@
+#comment {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.comment-wrapping {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-wrapping h1 {
+    margin: 5px 0 10px;
+    text-align: center;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.comment-wrap-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-wrap-item .text-time {
+    display: flex;
+    gap: 20px;
+}
+
+.text-time .comment-time {
+    color: #55555547;
+}
+
+.comment-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-text {
+    margin: 5px 0;
+    color: #555;
+}
+
+.delete-comment {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.delete-comment:hover {
+    color: #003b7a;
+}
+
+.pagination-comment {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-comment a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination-comment a:hover {
+    text-decoration: underline;
+}
+
+.comment-wrapping h3 {
+    color: red;
+    text-align: center;
+}

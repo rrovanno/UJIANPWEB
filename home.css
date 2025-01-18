@@ -1,0 +1,525 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Efek scroll halus */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  /* Menjadikan navbar tetap */
+  top: 0;
+  /* Menguncinya di atas */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* Memastikan navbar di atas konten lain */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: color 500ms ease, border-bottom 500ms ease-in;
+  /* Menambahkan transisi */
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar a.active {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar i {
+  margin-right: 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a.active {
+  color: blue;
+  /* Menandai item aktif */
+  font-weight: bold;
+  /* Membedakan lebih jelas */
+}
+
+main {
+  background-color: #ffffff;
+  padding-top: 60px;
+  /* Memberikan ruang agar konten tidak tertutupi navbar */
+}
+
+.content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #333;
+  margin: 0;
+}
+
+.content p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+.groom-bride-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.groom-bride-section img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  /* max-height: %; */
+}
+
+.wedding-image {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  /* Menambahkan box shadow */
+  opacity: 0.1;
+}
+
+.groom-bride-section .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.groom-bride-section .overlay .profile-wrap {
+  display: flex;
+  gap: 100px;
+}
+
+.groom-bride-section .overlay .profile-wrap .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.groom-bride-section .overlay .profile-wrap .profile h3 {
+  color: black;
+}
+
+.groom-bride-section .overlay .profile-wrap .profile p {
+  font-size: 14px;
+  color: black;
+}
+
+.groom-bride-section .overlay .profile-wrap .profile a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.groom-bride-section .overlay .profile-wrap .profile.and {
+  display: flex;
+  align-items: center;
+}
+
+.groom-bride-section .overlay .profile-wrap .profile.and span {
+  font-weight: 600;
+  font-size: 9rem;
+  color: #333749;
+  opacity: 1;
+}
+
+.groom-bride-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: #333;
+}
+
+.groom-bride-section .profile {
+  display: inline-block;
+  margin: 20px;
+}
+
+.groom-bride-section .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* SECTION INFORMATION */
+.information {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.information h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.information h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #3c4155;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.information .saturday {
+  color: #9d6110;
+  margin: 0;
+}
+
+.information h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.information .dates {
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.information .date {
+  font-size: 80px;
+  color: #8b5e3c;
+  margin: 0;
+}
+
+.information .month {
+  font-size: 1.5rem;
+  color: #8b5e3c;
+}
+
+.information .date span {
+  display: block;
+  font-size: 24px;
+  color: #8b5e3c;
+}
+
+.event {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 0px 1%;
+}
+
+.event .title {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.event h3 {
+  color: #9d6110;
+  font-size: 1rem;
+}
+
+.event p {
+  font-size: 16px;
+  color: #8b5e3c;
+  margin: 10px 0;
+}
+
+.event .time {
+  font-size: 16px;
+  color: #8b5e3c;
+}
+
+.event .time span {
+  color: #8b5e3c;
+}
+
+.event button {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.event button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.location button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.event button i {
+  margin-right: 5px;
+}
+
+.location {
+  margin-top: 10px;
+}
+
+.location h2 {
+  font-size: 1rem;
+}
+
+.location p {
+  font-size: 1rem;
+  color: #8b5e3c;
+  margin: 5px 0;
+}
+
+.location button {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.location button i {
+  margin-right: 5px;
+}
+
+/* SECTION INFORMATION */
+
+/* SECTION GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+}
+
+.gallery img {
+  width: calc(33.333% - 10px);
+  height: auto;
+}
+
+/* SECTION GALLERY */
+
+/* SECTION RSVP */
+.rsvp {
+  background-color: #6c7a89;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.rsvp h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.rsvp p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.rsvp input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.rsvp button,
+.comments button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.countdown-wrapping {
+  background-image: url("../assets/img/A\ darker\ background.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.countdown-wrapping h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  /* Pusatkan konten */
+  gap: 20px;
+  /* Jarak antar elemen */
+  font-size: 24px;
+  /* Ukuran font yang lebih besar untuk countdown */
+}
+
+.countdown-timer div {
+  text-align: center;
+  /* Pusatkan teks di dalam div */
+}
+
+/* SECTION RSVP */
+
+/* COMMENTS */
+.comments {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.comments h1 {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.comment {
+  padding: 10px 0;
+}
+
+.comments h1 {
+  color: #333749;
+}
+
+.comment .name {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.comment .time {
+  color: #999;
+  font-size: 14px;
+}
+
+.comment .text {
+  font-size: 16px;
+  margin: 5px 0;
+  color: black;
+}
+
+.comment .status {
+  font-size: 14px;
+  color: #999;
+}
+
+.comment .status .fa-check-circle {
+  color: #4caf50;
+}
+
+/* COMMENTS */
+
+/* MUSIC */
+.music-control {
+  position: fixed;
+  /* Mengapung di posisi tetap */
+  bottom: 20px;
+  /* Jarak dari bawah */
+  left: 20px;
+  /* Jarak dari kiri */
+  z-index: 1000;
+  /* Akan selalu di atas elemen lainnya */
+}
+
+.music-control button.hide {
+  display: none;
+}
+
+.music-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.music-button img {
+  width: 100%;
+  height: auto;
+}
+
+/* MUSIC */
+
+/* COMMENTS */
+
+.comments {
+  padding-bottom: 25px;
+}
+
+.comments button {
+  display: flex;
+  justify-content: center;
+}
+
+/* COMMENTS */
+/* FOOTER */
+footer {
+  height: 75px;
+}
+
+/* FOOTER */

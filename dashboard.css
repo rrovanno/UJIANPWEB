@@ -1,0 +1,430 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* DASHBOARD */
+.sidebar {
+  width: 150px;
+  background-color: #19262f;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar .logo span {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.639);
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar .menu li a {
+  text-decoration: none;
+  color: #ffffffb2;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .menu li a i {
+  margin-right: 10px;
+}
+
+.sidebar .menu li a.active {
+  color: #007bff;
+}
+
+.sidebar .menu li a:hover {
+  color: #007bff;
+}
+
+.sidebar .bottom-menu {
+  margin-top: auto;
+}
+
+.sidebar .bottom-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .bottom-menu li a {
+  color: #333;
+}
+
+.sidebar .bottom-menu li a:hover {
+  color: #007bff;
+}
+
+.sidebar .bottom-menu .dark-mode {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .bottom-menu .dark-mode input {
+  margin-left: 10px;
+}
+
+.sidebar .menu .disabled {
+  opacity: 0.5;
+}
+
+.sidebar .menu .disabled:hover {
+  color: #ffffffb2;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f8f9fa;
+  overflow-y: hidden;
+}
+
+.main-dashboard {
+  padding: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .header-item {
+  width: 90%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content .header .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-content .header .search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+
+.main-content .header .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-content .header .profile h3 {
+  font-size: 18px;
+}
+
+.main-content .header .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-dashboard .dashboard {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.main-dashboard .dashboard .card {
+  width: 15%;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.main-dashboard .dashboard .card i {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.main-dashboard .dashboard .card.AllGuests {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.main-dashboard .dashboard .card.presentGuest {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.main-dashboard .dashboard .card.comments {
+  background-color: #c2ffc7;
+  color: #856404;
+}
+
+.main-dashboard .recent-activity {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+}
+
+.main-dashboard .recent-activity table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main-dashboard .recent-activity h1 {
+  text-align: center;
+  opacity: 0.5;
+}
+.main-dashboard .recent-activity table th,
+.main-dashboard .recent-activity table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.main-dashboard .recent-activity table th {
+  background-color: #f8f9fa;
+}
+
+.main-dashboard .recent-activity .topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-dashboard .recent-activity .topbar .button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-dashboard .recent-activity .topbar .button .import-file {
+  width: 100%;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.main-dashboard .recent-activity .topbar .button .form.input {
+  display: flex;
+  justify-content: end;
+}
+
+.main-dashboard .recent-activity .topbar .button .import-file .input {
+  /* width: 100%; */
+  /* background-color: ; */
+  border: 1px solid gray;
+}
+
+.topbar .top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-dashboard .recent-activity .topbar .search-data {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-dashboard .recent-activity .topbar .search-data input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #f8f9fa;
+}
+
+.btn.green,
+.btn.back {
+  color: white;
+  background-color: #218838;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn.greenLight {
+  color: white;
+  background-color: #2cad48;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn.greenLight:hover {
+  background-color: #18752c;
+}
+
+.btn.green:hover,
+.btn.back:hover {
+  background-color: #18752c;
+}
+
+.sidebar button {
+  border-width: 20%;
+  margin-left: 20px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #007bff;
+}
+
+.btn.edit:hover {
+  background-color: #0056b3;
+}
+
+.btn.delete {
+  background-color: #dc3545;
+}
+
+.btn.delete:hover {
+  background-color: #c82333;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* DASHBOARD */
+/* MODAL KONFIRMASI LOGOUT*/
+#logout-modal.modal {
+  display: flex;
+  /* Tampilkan flex untuk menampung konten */
+  position: fixed;
+  /* Posisi tetap di center */
+  z-index: 1000;
+  /* Di atas konten lainnya */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Latar belakang semi-transparan */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  /* Latar belakang putih untuk konten modal */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  /* Lebar maksimum modal */
+  width: 90%;
+  /* Untuk ukuran kecil */
+}
+
+.confirm-wrapping {
+  display: flex;
+  justify-content: space-between;
+  /* Untuk memisahkan tombol */
+  margin-top: 20px;
+}
+
+.confirm-wrapping button {
+  margin: 0 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* MODAL KONFIRMASI */
+
+/* PAGINATION RECENT ACTIVITY */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.d-none {
+  display: none;
+}

@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  background: url(../assets/img/bg-rsvp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.confirmation-wrapper {
+  background-color: #ffffff;
+  width: 100%; /* Ubah untuk menyesuaikan dengan responsivitas */
+  max-width: 600px;
+  margin: auto;
+  padding: 30px; /* Tambah padding untuk tampilan lebih nyaman */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Perubahan untuk text alignment */
+}
+
+h1 {
+  color: #333333;
+  text-align: center; /* Tetap center */
+  margin-bottom: 20px; /* Spasi bawah untuk h1 */
+}
+
+.guest-info {
+  margin-top: 20px; /* Spasi atas untuk informasi tamu */
+  line-height: 1.6; /* Menambah jarak antar baris */
+}
+
+strong {
+  color: #333; /* Memberi ketebalan pada label */
+}
+
+p {
+  color: #555; /* Warna teks */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Tombol memenuhi lebar container */
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Spasi atas untuk tombol */
+}
+
+button:hover {
+  background-color: #218838; /* Warna tombol hover */
+}

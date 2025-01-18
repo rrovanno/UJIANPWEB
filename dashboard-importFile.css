@@ -1,0 +1,73 @@
+#modal-import.modal {
+    display: none;
+    /* Tersembunyi secara default */
+    position: fixed;
+    /* Tetap di layar */
+    z-index: 1000;
+    /* Di atas elemen lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Lebar penuh */
+    height: 100%;
+    /* Tinggi penuh */
+    overflow: auto;
+    /* Jika perlu, seret */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Hitam dengan transparansi */
+}
+
+#modal-import .modal-content {
+    background-color: #fefefe;
+    /* Warna latar belakang */
+    margin: auto;
+    /* Otomatis menggunakan margin untuk centering */
+    padding: 20px;
+    border: 1px solid #888;
+    /* Border */
+    width: 60%;
+    /* Lebar modal */
+    max-width: 300px;
+    /* Atur lebar maksimum */
+    border-radius: 10px;
+    /* Sudut melengkung */
+    position: relative;
+    /* Untuk efek positioning */
+    top: 50%;
+    /* Posisikan dari atas */
+    transform: translateY(-50%);
+    /* Mengangkat modal kembali setengah tinggi modal */
+}
+
+#modal-import .import-file .form.input {
+    display: flex;
+    justify-content: center;
+}
+
+.import-wrapping #button {
+    height: 200px;
+}
+
+#modal-import .import {
+    display: flex;
+    justify-content: center;
+}
+
+#modal-import .modal-content .import-file {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#modal-import .modal-content>h2 {
+    margin-top: -3px;
+    text-align: center;
+}
+
+#modal-import .modal-content .import-wrapping {
+    display: flex;
+    gap: 20px;
+}
+
+/* MODAL IMPORT */
